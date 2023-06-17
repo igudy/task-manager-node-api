@@ -5,11 +5,11 @@ const TaskSchema = new mongoose.Schema({
     type: String,
     required: [true, "Must provide name"],
     trim: true,
-    maxlength: [20, "Name can not be more than 20 characters"],
+    maxlength: [1000, "Name can not be more than 1000 characters"],
   },
   completed: {
     type: Boolean,
-    default: false,
+    // default: false,
   },
 })
 
